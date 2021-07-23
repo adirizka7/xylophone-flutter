@@ -12,67 +12,84 @@ class XylophoneApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+      ),
       home: Scaffold(
         body: SafeArea(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                TextButton(
-                  onPressed: () {
-                    playSound(1);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.teal,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(1);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.red,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(2);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(2);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.orange,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(3);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.red,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(3);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.yellow,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(4);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.yellow,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(4);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.green,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(5);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.purple,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(5);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(6);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.black,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(6);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.indigo,
+                    ),
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    playSound(7);
-                  },
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.blue.shade900,
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      playSound(7);
+                    },
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.purple,
+                    ),
                   ),
                 ),
               ],
